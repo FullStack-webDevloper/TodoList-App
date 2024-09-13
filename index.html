@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced To-Do App</title>
+  <!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <!-- Font Awesome for icons -->
+  <link align="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <h2>ToDoPro</h2>
+    </div>
+    <ul class="nav-list">
+      <li><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+      <li><a href="#"><i class="fas fa-tasks"></i> Tasks</a></li>
+      <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+      <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="main-content">
+    <!-- Header -->
+    <header>
+      <h1>Manage Your Tasks</h1>
+      <div class="search-bar">
+        <input type="text" placeholder="Search tasks...">
+        <button> Search<i class="fas fa-search"></i></button>
+      </div>
+    </header>
+
+    <!-- Form for adding tasks -->
+    <section class="task-form-section">
+      <form id="taskForm" class="task-form">
+        <input type="text" id="taskName" placeholder="Task Name" required>,<br><br><br>
+        <textarea id="taskDesc" placeholder="Task Description" required></textarea><br>
+        <button type="submit" class="btn-primary">Add Task</button>
+      </form>
+    </section>
+    <br><br>
+
+    <!-- Task List Display -->
+    <section class="task-list-section">
+      <div class="task-list-header">
+        <h2>Task List</h2>
+      </div>
+      <ul id="taskList" class="task-list">
+        <!-- Task items will be dynamically injected here -->
+      </ul>
+    </section>
+  </div>
+
+  <!-- JS File -->
+  <script src="js/app.js"></script>
+</body>
+</html>
